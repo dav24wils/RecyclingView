@@ -1,0 +1,33 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace     'com.ikechi.studio.recyclingview.example'
+    compileSdk    29
+
+    defaultConfig {
+        applicationId "com.ikechi.studio.recyclingview.example"
+        minSdk        18
+        targetSdk     29
+        versionCode   1
+        versionName   "2.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'),
+                          'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    
+}
